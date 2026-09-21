@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KODDA - Home</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #1a1a1a;
+
+            background-color: #faf9f6; 
+            background-image: radial-gradient(#d3d1cb 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 20px 5%;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 20px; 
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #000; 
+        }
+
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            text-align: center;  
+            padding: 80px 10%;
+            max-width: 900px;
+            margin: 0 auto;       
+        }
+
+        .hero h1 {
+            font-size: 72px;    
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .btn-primary, .btn-accent, .btn-secondary {
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 50px; 
+            font-weight: 600;
+            font-size: 15px;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .btn-accent {
+            background-color: #e25c34; 
+            color: #fff;
+        }
+
+        .btn-secondary {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #e0e0e0;
+        }
+
+        .btn-primary:hover, .btn-accent:hover, .btn-secondary:hover {
+            transform: scale(1.03);
+        }
+
+
+        .promise {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 60px 10%;
+            background-color: rgba(255, 255, 255, 0.6); 
+            border-top: 1px solid #eee;
+        }
+
+        .promise h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+
+        .promise p {
+            font-size: 16px;
+            color: #555;
+            max-width: 650px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .promise img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 12px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <span class="logo">Kodda</span>
+        <nav>
+            <a href="#">Features</a>
+            <a href="#">Stories</a>
+            <a href="#">Assistant</a>
+            <a href="/login">Sign in</a>  
+            <a href="/register" class="btn-primary">Get started</a>
+        </nav>
+    </header>
+
+    <main></main>
+        <section class="hero">
+            <h1>Grow together one habit at time.</h1>
+            <p>Kodda helps families build positive habits and stronger relationships 
+               — connection, not control, guided by a warm companion.</p>
+            
+            <div class="hero-buttons">
+                <a href="/register" class="btn-accent">Get started free &rarr;</a>
+                <a href="#" class="btn-secondary">See the demo</a>
+            </div>
+        </section>
+        <section class="promise">
+            <h2>Our promise</h2>
+            <p>Kodda never tracks, monitors or spies. Teens own their journey; parents get a calm, 
+               encouraging view of growth. Trust is built one small habit at a time — the way families in Latin 
+               America have always done it, together.</p>
+            <img src="https://pexels.com" alt="Teens with tablets"> 
+        </section> 
+    </main> 
+
+    <!-- Pie de página -->
+    <footer>
+        <h5>© 2026 Kodda. Connection, not control.</h5>
+    </footer> 
+
+</body> 
+</html>
